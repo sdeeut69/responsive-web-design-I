@@ -219,3 +219,24 @@ ul li {
 	margin-bottom: 20px;
 	width: 90%;
 }
+
+/* TABLET VIEW */
+
+@media (max-width: 800px) {
+	body {
+		flex-direction: row;
+		align-items: center;
+		width: 98%;
+	}
+}
+
+/* MOBILE VIEW */
+
+@media (max-width: 500px) {
+	body {
+		flex-direction: column;
+		align-items: center;
+		width: 98%;
+	}
+
+}
