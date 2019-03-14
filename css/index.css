@@ -72,7 +72,6 @@ h1, h2, h3, h4, h5 {
 body {	
 	box-sizing: border-box;
 	line-height: 1.2;
-	border: 1px solid brown;
 }
 
 .container {
@@ -286,17 +285,16 @@ ul li {
 /* MOBILE VIEW */
 
 @media (max-width: 500px) {
-	/* .container {
-		display: flex;
+	.container {
 		flex-direction: column;
 		align-items: center;
 		width: 91%;
 		margin: 0 80px 0 20px;
-	} */
+	}
 
 	.logo {
-		margin-bottom: 20px;
 		justify-content: flex-start;
+		margin: 20px auto;
 	}
 
 	.innovation-text {
@@ -356,7 +354,7 @@ ul li {
 	.middle-img {
 		height: auto;
 		margin: 0 20px 0 20px;
-		width: 100%;
+		width: 90%;
 	}
 
 	.line {
