@@ -72,7 +72,6 @@ h1, h2, h3, h4, h5 {
 body {	
 	box-sizing: border-box;
 	line-height: 1.2;
-	border: 1px solid brown;
 }
 
 .container {
@@ -123,6 +122,8 @@ h3 {
 }
 
 .top div {
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 	align-content: center;	
 }
@@ -130,13 +131,12 @@ h3 {
 .innovation-text {
 	font-size: 450%;
 	padding-top: 60px;
-	margin-left: 60px;
 	text-align: center;
 	justify-content: center;
 }
 
 .get-started-button {
-	margin-left: 40%;
+	margin: 0 auto;
 	width: 150px;
 	background: none;
 	border: 1px solid black;
@@ -218,6 +218,7 @@ h3 {
 .boxes {
 	border: 1px solid black;
 }
+
 .button2 {
 	border: 1px solid black;
 	font-size: 60%;
@@ -274,11 +275,26 @@ ul li {
 	}
 
 	.get-started-button {
-		margin: 0 auto;
+		margin: 20px auto;
 		width: 150px;
 		background: none;
 		border: 1px solid black;
 		padding: 5px;		
+	}
+
+	.middle-img {
+		height: auto;
+		margin: 0 20px 0 20px;
+		width: 95%;
+	}
+
+	.upper-section p {
+		width: 90%;
+	}
+
+	.line {
+		border-top: 2px solid black;
+		margin: 80px 20px 60px 20px;
 	}
 
 }
@@ -286,17 +302,16 @@ ul li {
 /* MOBILE VIEW */
 
 @media (max-width: 500px) {
-	/* .container {
-		display: flex;
+	.container {
 		flex-direction: column;
 		align-items: center;
 		width: 91%;
 		margin: 0 80px 0 20px;
-	} */
+	}
 
 	.logo {
-		margin-bottom: 20px;
 		justify-content: flex-start;
+		margin: 20px auto;
 	}
 
 	.innovation-text {
@@ -308,7 +323,7 @@ ul li {
 	}
 
 	.get-started-button {
-		margin: 0 auto;
+		margin: 20px auto;
 		width: 150px;
 		background: none;
 		border: 1px solid black;
@@ -356,12 +371,18 @@ ul li {
 	.middle-img {
 		height: auto;
 		margin: 0 20px 0 20px;
-		width: 100%;
+		width: 90%;
 	}
 
 	.line {
 		border-top: 2px solid black;
 		margin: 80px 20px 60px 20px;
 	}
+
+	header nav a:hover,
+	header nav a:active {
+	border-bottom: none;
+	transition: border-bottom 0;
+}
 
 }
